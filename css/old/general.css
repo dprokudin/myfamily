@@ -1,0 +1,1596 @@
+﻿		
+.fixfloat:after { 
+	content: "."; 
+	display: block;
+	height: 0; 
+	clear: both; 
+	visibility: hidden; 
+}
+#LoginInformationSlider 
+{
+    display: none;
+    background-color: #CDCDCD;
+    -webkit-box-shadow:inset -1px -1px rgba(0,0,0,.3);
+    -moz-box-shadow: inset -1px -1px rgba(0,0,0,.3);
+    box-shadow: inset -1px -1px rgba(0,0,0,.3); 
+}
+.informationSliderText {
+    color: #AD3129;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.flash {
+	outline: none;
+}
+
+body {
+	background: #fff;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+	font-size: 12px;	
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+#page {
+	width: 994px;
+	text-align: left;
+	margin: 0 auto 20px auto;
+	position: relative;
+}
+
+img {
+	border: none;
+}
+
+p {
+	margin: 0 0 1em 0;
+	padding: 0;
+} 
+
+ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	cursor:pointer;
+	color: #0F3A6F;
+}
+
+#top {
+	position: relative;
+	height: 63px;
+	z-index: 2;
+	text-transform: uppercase;
+}
+
+#logo {
+	position: absolute;
+	top: 4px;
+	left: 3px;
+	background: url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Logo/logo.png) no-repeat 0 0;
+	z-index: -1;
+}
+* html #logo {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Logo/logo.png', sizingMethod='scale');
+}
+/*#logo img {
+	width: 89px;
+	height: 83px;
+	display: block;
+}
+*/
+
+#volvocars-ironmark
+{
+	width: 89px;
+	height: 83px;
+	display: block;
+}
+
+/* Search */
+
+#search {
+	position: absolute;
+	top: 36px;
+	right: 0;
+	width: 150px;
+}
+
+#search .global-keywords 
+{
+    background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/searchfield.gif) no-repeat scroll 0 0;
+    height: 17px;
+}
+
+.searchfield {
+	border: none;
+	margin: 0;
+	background: transparent;
+	font-size: 10px;
+	color: #B5B5B5;
+	padding: 1px 0 0 3px;
+	height: 13px;
+	width: 130px;
+}
+
+#search .searchbutton {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#search .completion-list {
+	background: #fff;
+	border: 1px solid #CECECD;
+	z-index: 10000;
+}
+
+#search .completion-list a, #search .completion-list a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+#search .completion-list-item {
+	margin: 3px 5px;
+	text-transform: none;
+}
+
+#search .completion-list-highlighted  {
+	background: #eee;
+	margin: 3px 5px;
+	text-transform: none;
+}
+
+/* Top left tools nav */
+
+#toptools {
+	position: absolute;
+	top: 4px;
+	left: 101px;
+	font-size: 12px;
+	letter-spacing: 0.2px;
+}
+
+#toptools li {
+	color: #ccc;
+	float: left;
+	margin: 0 11px 0 0;
+	padding: 0;
+}
+
+#toptools a {
+	color: #686868;
+	display: block;
+}
+
+#toptools span {
+	display: block;
+	padding: 1px 0;
+}
+
+#toptools li.active a {
+	background: transparent url(/_layouts/VolvoCars/OwnerPages/Images/avigation/toolsnav_active.gif) no-repeat;
+	padding: 0 0 0 4px;
+}
+
+#toptools li.active span {
+	background: transparent url(/_layouts/VolvoCars/OwnerPages/Images/avigation/toolsnav_active.gif) no-repeat top right;
+	padding-right: 4px;
+	color: #fff;
+}
+
+/* Top tools extended */
+
+#toptools-ext {
+	position: absolute;
+	right: 0;
+	top: 4px;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+#toptools-ext li {
+	color: #ccc;
+	float: right;
+	margin: 0 0 0 11px;
+	padding: 0;
+}
+
+#toptools-ext a {
+	color: #686868;
+	display: block;
+}
+
+* html #toptools-ext a {
+	display: inline-block;
+}
+
+#toptools-ext span {
+	display: block;
+	padding: 1px 0;
+}
+
+#toptools-ext li.active a {
+	background: transparent url(/_layouts/VolvoCars/OwnerPages/Images/avigation/toolsnav_active.gif) no-repeat top left;
+	padding: 0 0 0 4px;
+	display: block;
+}
+
+#toptools-ext li.active span {
+	background: transparent url(/_layouts/VolvoCars/OwnerPages/Images/avigation/toolsnav_active.gif) no-repeat top right;
+	padding-right: 4px;
+	color: #fff;
+}
+
+/* Top right nav */
+
+#about {
+	position: absolute;
+	top: 12px;
+	right: 0;
+	font-size: 10px;
+	letter-spacing: 0.2px;
+}
+
+#about li {
+	float: left;
+	margin-right: 7px;
+}
+
+#about a {
+	color: #666;
+}
+
+/* Social media bar */
+
+#social-media-bar {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/social-media-bar.png) no-repeat;
+	width: 998px;
+	height:39px;
+	margin: 7px 0 0 -1px;
+	position: relative;
+	clear: both;
+}
+
+* html #social-media-bar { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/social-media-bar.gif); }
+
+#social-media-bar #visit, #social-media-bar #like {
+	display: inline;
+	float: left;
+	width: 325px;
+}
+
+#social-media-bar #visit {
+	padding-left: 8px;
+}
+
+#social-media-bar .header {
+	float: left;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 13px 0 0;
+}
+
+#social-media-bar .icons {
+	margin-top: 8px;
+	float:left;
+}
+
+#social-media-bar .icon {
+	margin-left: 1px;
+}
+
+* html #social-media-bar .icon img {
+	behavior: url("/_layouts/VolvoCars.SharePoint.Features.Site3/JS/pngfix/iepngfix.htc");
+}
+
+#social-media-bar  td  {
+	height: 16px;
+}
+
+#social-media-bar #visit .icons a, #social-media-bar #share .icons a  {
+	max-width: 16px;
+	overflow: hidden;
+}
+
+#social-media-bar #like .left, #social-media-bar #like .right, #social-media-bar #like .center {
+	display: inline;
+	float: left;
+	width: 155px;
+	padding-top: 9px;
+}
+#social-media-bar #like .left {
+	padding-right: 7px;
+}
+
+#social-media-bar #like .right {
+	padding-left: 7px;
+}
+
+#social-media-bar #like .center {
+	width: 210px;
+	padding-left: 120px;
+}
+
+#social-media-bar #like .center #___plusone_0 {
+	float: left !important;
+}
+
+#social-media-bar #___plusone_0 {
+	float: right !important;
+}
+
+#social-media-bar #share  {
+	display: inline;
+	padding-right: 11px;
+	position: absolute;
+	right:0;
+}
+
+#social-media-bar #share-button {
+	float:left;
+	margin: 10px 0 0 10px;
+}
+
+#social-media-bar #addthis {
+	float: left;
+	text-transform: uppercase;
+	font-size: 9px;
+}
+
+#social-media-bar #addthis a {
+    background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/button_share.png) no-repeat scroll 0 0;
+    display: block;
+    padding: 0 0 0 14px;
+    float: left;
+}
+
+#social-media-bar #addthis span {
+    background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/sendtofriend.gif) no-repeat scroll right top;
+    color: #fff;
+    display: block;
+    height: 14px;
+    padding: 4px 14px 0 0;
+    float: left;
+}
+
+/* Hide comment popup on facebook like */
+.fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {
+display: none !important;}
+
+/* Footer nav */
+
+#footer {
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom:20px;
+	display:block;
+	overflow: hidden;	
+	text-align:left;
+	width:994px;
+	background-color:#f4f4f4;
+	font-family:Helvetica,Arial,Sans-Serif;
+}
+
+* html #footer { height: 1%; }
+
+#footer ul {
+	float: left;
+	overflow: hidden;
+	margin: 13px 0 0 20px;
+	list-style-type:none;
+	padding:0;
+	line-height:17px;
+	color:#ffffff;
+	-webkit-margin-before:1em;
+	-webkit-margin-after:1em;
+	-webkit-margin-end:0;
+	-webkit-margin-start:0;
+	-webkit-padding-start:40px;
+    height:24px;	
+}
+
+* html #footer ul { height: 1%; }
+
+#footer ul li {	
+	float: left;	
+	margin:0 40px 0 0;
+	list-style-type:none;
+	padding-bottom:7px;
+	display: inline;
+	height:17px;
+}
+
+#footer ul li a 
+{
+    font-size:Helvetica, Arial, sans-serif;
+    color:rgb(92, 146, 187);
+    height:auto;
+	white-space:nowrap;
+	font-size: 12px;
+	border:none;
+	cursor:pointer;
+}
+
+#footer a:hover {
+	color: #000;
+}
+
+#footer-buttons {
+	float: right;
+}
+
+/* Content */
+
+#content {
+	position: relative;
+	z-index: 1;
+	clear: both;
+	min-height: 100px;
+	overflow: visible;
+}
+
+* html #content { height: 1%; }
+
+
+/* Two-columns layout */
+
+#content.two-columns {
+	background: #92BDEE url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Backgrounds/bg_search.jpg) no-repeat;
+	padding: 48px 0;
+}
+
+#content.two-columns-grey {
+	background: url("/_layouts/VolvoCars.SharePoint.Features.Site3/Images/MyVolvo/Backgrounds/vertical-bg-gradient.png") repeat-y scroll 0 0 #7B7B7B;
+	width:994px;
+}
+
+#content.two-columns-grey #fading-background {
+	background: url("/_layouts/VolvoCars.SharePoint.Features.Site3/Images/MyVolvo/Backgrounds/bg-bottom-fade-out.png") no-repeat scroll left bottom transparent;
+    overflow: hidden;
+    width: 994px;
+	padding:0 0 48px 0;
+}
+
+body.ie6  #content.two-columns-grey #fading-background {
+	background-image: url("/_layouts/VolvoCars.SharePoint.Features.Site3/Images/MyVolvo/Backgrounds/bg-bottom-fade-out-ie6.png");
+}
+
+#content.two-columns-grey #volvo-logo {
+	background: url("/_layouts/VolvoCars.SharePoint.Features.Site3/Images/MyVolvo/Backgrounds/bg-top-transparent.png") no-repeat scroll left top transparent;
+    height: 62px;
+    overflow: hidden;
+    padding: 32px 0 30px 47px;
+}
+
+body.ie6  #content.two-columns-grey #volvo-logo {
+	background-image: url("/_layouts/VolvoCars.SharePoint.Features.Site3/Images/MyVolvo/Backgrounds/bg-top-transparent-ie6.png");
+}
+
+.two-columns #sidebar {
+	float: left;
+	margin: -2px 9px 0 17px;
+	width: 170px;
+	min-height: 20px;
+	display: inline;
+}
+
+.two-columns-grey #sidebar {
+	float: left;
+	margin: -2px 9px 0 17px;
+	width: 170px;
+	min-height: 20px;
+	display: inline;
+}
+
+.background-settings{margin-top:15px;}
+
+
+.two-columns #sidebar h1,
+.two-columns #sidebar #sidebar-header {
+	margin: 0 0 0 6px;
+	padding: 0;
+}
+
+.two-columns-grey #sidebar h1,
+.two-columns-grey #sidebar #sidebar-header {
+	margin: 0 0 0 6px;
+	padding: 0;
+}
+
+.two-columns #main {
+	float: left;
+	width: 782px;
+}
+
+.two-columns-grey #main {
+    width:774px;
+	float:left;
+}
+
+* html .two-columns-grey #sidebar{
+	margin:15px 0 0 8px;
+}
+
+.content-box a {
+	font-weight: bold;
+}
+
+.content-box {
+	margin: 5px 0 0 0;
+	padding: 7px 0 0 0;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Boxes/contentbox_782_top.png) no-repeat;
+	width: 782px;
+}
+
+* html .content-box { background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Boxes/contentbox_782_top.gif) no-repeat; }
+
+.content-box .content-box-inner {
+	position: relative;
+	padding: 12px 21px 17px 19px;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Boxes/contentbox_782_middle.png) repeat-y;
+}
+
+* html .content-box .content-box-inner { background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Boxes/contentbox_782_middle.gif) repeat-y; }
+
+.content-box .content-box-bottom {
+	height: 5px;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Boxes/contentbox_782_bottom.png) no-repeat;
+}
+
+* html .content-box .content-box-bottom { background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Boxes/contentbox_782_bottom.gif) no-repeat; }
+
+.content-box h1 {
+	color: #4e5776;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 0 0 13px 0;
+	padding: 0;
+	font-size: 23px;
+}
+
+.content-box h2 {
+	border-top: dotted 2px #CECED0;
+	/*border-bottom: dotted 2px #CECED0;*/
+	/*text-transform: uppercase;*/
+	color: #545454;
+	font-size: 15px;
+	/*font-weight: normal;*/
+	padding: 12px 0 0 0;
+	margin: 12px 0;
+}
+
+.content-box h2.section {
+	border-bottom: none;
+	padding-bottom: 0;
+	padding-top: 12px;
+}
+
+/* Text block for standard page etc */
+
+.content-box .textblock {
+	color: #545454;
+	font-size: 12px;
+	line-height: 1.4em;
+	margin-top: 18px;
+}
+
+.content-box .textblock h3,
+.content-box .standard-module h3,
+#list-items .list-item h3 {
+	font-size: 13px;
+	margin: 12px 0;
+}
+
+.content-box .textblock h4,
+.content-box .standard-module h4,
+#list-items .list-item h4 {
+	font-size: 13px;
+	margin: 12px 0;
+}
+
+.content-box .textblock h5,
+.content-box .textblock h6,
+.content-box .standard-module h5,
+.content-box .standard-module h6,
+#list-items .list-item h5,
+#list-items .list-item h6 {
+	font-size: 12px;
+	margin: 12px 0;
+}
+
+.textblock ul,
+.content-box .standard-module ul,
+.list-item ul {
+	margin: 1em 1em 1em 15px;
+}
+
+.textblock ul,
+.textblock ul li,
+.content-box .standard-module ul,
+.content-box .standard-module ul li,
+.list-item ul,
+.list-item ul li {
+	list-style-type: disc;
+}
+
+.textblock ol,
+.textblock ol li,
+.content-box .standard-module ol,
+.content-box .standard-module ol li,
+.list-item ol,
+.list-item ol li {
+	list-style-type: decimal;
+}
+
+/* Two-columns sidebar nav */
+
+#sidebar-nav {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#sidebar-nav ul {
+	
+}
+
+#sidebar-nav ul ul {
+	text-transform: none;
+	
+	font-weight: normal;
+}
+
+#sidebar-nav li {
+	padding: 1px 0 0 0;
+	margin: 0;
+	min-height: 23px;
+}
+
+#sidebar li li {
+	padding-left: 11px;
+}
+
+#sidebar-nav ul.last li {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/dotted.gif) no-repeat 4px 2px;
+}
+
+#sidebar-nav ul.last li.active {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/dotted_active.gif) no-repeat 4px 2px;
+}
+
+#sidebar-nav ul.last li.last {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/dotted_last.gif) no-repeat 4px 2px;
+}
+
+#sidebar-nav ul.last li.last-active {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/dotted_last_active.gif) no-repeat 4px 2px;
+}
+
+#sidebar-nav a {
+	color: #1e2630;
+	font-size: 11px;
+	display: block;
+}
+
+#sidebar-nav a:hover {
+	color: #000;
+}
+
+#sidebar-nav a span {
+	display: block;
+	padding: 4px 6px 0 6px;
+}
+
+#sidebar-nav a.active {
+	color: #fff;
+	font-weight: bold;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/active_first_15.png) no-repeat bottom right;
+	padding: 0 0 4px 0;
+}
+
+* html #sidebar-nav a.active { background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/active_first_15.gif) no-repeat bottom right; }
+
+#sidebar-nav a.active span {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/active_first_15.png) no-repeat top left;
+}
+
+* html #sidebar-nav a.active span { background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/active_first_15.gif) no-repeat top left; }
+
+#sidebar-nav ul ul a.active,
+#sidebar-nav ul ul a.active span {
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/active_second_30.png);
+}
+
+* html #sidebar-nav ul ul a.active,
+* html #sidebar-nav ul ul a.active span {
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/active_second_30.gif);
+}
+
+#sidebar-nav ul ul ul a.active,
+#sidebar-nav ul ul ul a.active span {
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/active_third_50.png);
+}
+
+* html #sidebar-nav ul ul ul a.active,
+* html #sidebar-nav ul ul ul a.active span {
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/active_third_50.gif);
+}
+
+#sidebar-nav ul ul ul ul a.active,
+#sidebar-nav ul ul ul ul a.active span {
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/active_fourth_50.png);
+}
+
+* html #sidebar-nav ul ul ul ul a.active,
+* html #sidebar-nav ul ul ul ul a.active span {
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/leftnav/active_fourth_50.gif);
+}
+
+/* BUTTONS */
+
+.button-container {
+	overflow: hidden;
+}
+
+* html .button-container { height: 1%; }
+
+/* Link button */
+
+.link-button {
+	margin: 10px 0 0 0;
+	float: left;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/button_arrow.png) no-repeat;
+	padding: 0 0 0 15px;
+	font-size: 9px;
+	text-transform: uppercase;
+	color: #666;
+}
+
+* html .link-button { height: 1%; }
+
+.link-button span {
+	display: block;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/button_arrow.png) no-repeat right -17px;
+	padding: 3px 10px 0 5px;
+	height: 14px;
+	font-weight: normal;
+}
+
+* html .link-button span { float: left; }
+
+/* Back button */
+
+.back-button {
+	margin: 10px 0 0 0;
+	float: left;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/button_previous.png) no-repeat;
+	padding: 0 0 0 15px;
+	font-size: 9px;
+	text-transform: uppercase;
+	color: #666;
+}
+
+* html .back-button { height: 1%; }
+
+.back-button span {
+	display: block;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/button_previous.png) no-repeat right -17px;
+	padding: 3px 10px 0 5px;
+	height: 14px;
+}
+
+* html .back-button span { float: left; }
+
+/* Flash alt content */
+
+.flashTexts {
+	display: none;
+}
+
+.flashAltContent {
+	background: #92BDEE url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Backgrounds/bg_search.jpg) no-repeat;
+}
+
+.flashAltContent table {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.flashAltContent td {
+	border: none;
+	vertical-align: middle;
+	text-align: center;
+	color: #31373F;
+}
+
+.flashAltContent .button {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+
+.flashAltContent .button div {
+	position: relative;
+	left: -50%;
+}
+
+* html .flashAltContent .button div {
+	width: 1%;
+}
+
+
+/* Imran added css for GIP Menu general css classes. start */
+
+
+/* Model navigation */
+
+#model-nav {
+	position: absolute;
+	top: 34px;
+	/*left: 46px;*/
+	width: 992px;
+	overflow: hidden;
+}
+
+* html #model-nav {
+	overflow: visible;
+	height: 1%;
+}
+
+#model-nav-wrapper {
+	float: left;
+	position: relative;
+	left: 47.3%;
+	margin-left: 28px;
+}
+
+* html #model-nav-wrapper { margin-left:14px; }
+
+#model-nav-inner1 {
+	float: left;
+	text-align: left;
+	position: relative;
+	left: -50%;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_left.png) no-repeat bottom left;
+	padding: 0 0 0 22px;
+}
+
+* html #model-nav-inner1 {
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_left.gif);
+}
+
+#model-nav-inner2 {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_right.png) no-repeat bottom right;
+	overflow: visible;
+	height: 49px;
+	padding-right: 5px;
+	float: left;
+}
+
+* html #model-nav-inner2 {	
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_right.gif);
+}
+
+#model-nav ul {
+	overflow: visible;
+	margin-left: -3px;
+}
+
+* html #model-nav ul { height: 1%; float: left; display: inline; }
+
+#model-nav li {	
+	float: left;
+	position: relative;
+	margin: 0 15px 0 0;
+	font-weight: bold;
+}
+
+* html #model-nav li { display: inline; }
+
+#model-nav ul ul {
+	overflow: visible;
+	margin: 0;
+}
+
+* html #model-nav ul ul { height: auto; }
+
+#model-nav ul ul li {
+	margin: 0;
+	font-weight: normal;
+	margin-right: -10px;
+}
+
+#model-nav a {
+	color: #000;
+	padding: 0 0 0 10px;
+	display: block;
+}
+
+#model-nav span {
+	padding: 4px 10px 0 0;
+	display: block;
+}
+
+#model-nav span.modelfamily {
+	padding-left: 10px;
+}
+
+/* Model nav - section */
+
+#model-nav li.section {
+	margin-right: 0;
+	margin-left: -10px;
+}
+
+* html #model-nav li.section a { width: 1%; }
+
+#model-nav li.section a {
+	padding-left: 21px;
+	cursor: default;
+}
+
+#model-nav li.section span {
+	height: 38px;
+	padding-right: 21px;
+}
+
+#model-nav li.section a.hover {
+	color: #fff;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_hover_section.png) no-repeat;
+}
+
+* html #model-nav li.section a.hover { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_hover_section.gif); }
+
+#model-nav li.section a.hover span {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_hover_section.png) no-repeat bottom right;
+}
+
+* html #model-nav li.section a.hover span { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_hover_section.gif); }
+
+/* Model nav - models */
+
+#model-nav ul ul span {
+	padding: 3px 8px 3px 0;
+}
+
+#model-nav ul ul a { color: #686868; }
+
+* html #model-nav ul ul a { float: left; }
+
+#model-nav ul ul li.active a {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_active_model.gif) no-repeat;
+	color: #fff;
+}
+
+#model-nav ul ul a.hover,
+#model-nav ul ul li.active a.hover {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_hover_model.png) no-repeat;
+	color: #fff;
+}
+
+* html #model-nav ul ul a.hover,
+* html #model-nav ul ul li.active a.hover {
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_hover_model.gif);
+}
+
+#model-nav ul ul li.active span {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_active_model.gif) no-repeat bottom right;
+}
+
+#model-nav ul ul a.hover span {	
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_hover_model.png) no-repeat bottom right;
+}
+
+* html #model-nav ul ul a.hover span {	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_hover_model.gif); }
+
+* html #model-nav ul ul a span {
+	float: left;
+	height: 1%;
+}
+
+/* Top left tools nav */
+
+#toptools {
+	position: absolute;
+	top: 4px;
+	left: 101px;
+	font-size: 12px;
+	letter-spacing: 0.2px;
+}
+
+#toptools li {
+	color: #ccc;
+	float: left;
+	margin: 0 11px 0 0;
+	padding: 0;
+}
+
+#toptools a {
+	color: #686868;
+	display: block;
+}
+
+#toptools span {
+	display: block;
+	padding: 1px 0;
+}
+
+#toptools li.active a {
+	background: transparent url(/_layouts/VolvoCars/OwnerPages/Images/avigation/toolsnav_active.gif) no-repeat;
+	padding: 0 0 0 4px;
+}
+
+#toptools li.active span {
+	background: transparent url(/_layouts/VolvoCars/OwnerPages/Images/avigation/toolsnav_active.gif) no-repeat top right;
+	padding-right: 4px;
+	color: #fff;
+}
+
+/* Top tools extended */
+
+#toptools-ext {
+	position: absolute;
+	right: 0;
+	top: 4px;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	z-index: 5;
+}
+
+#toptools-ext li {
+	color: #ccc;
+	float: right;
+	margin: 0 0 0 11px;
+	padding: 0;
+}
+
+#toptools-ext a {
+	color: #686868;
+	display: block;
+}
+
+* html #toptools-ext a {
+	display: inline-block;
+}
+
+#toptools-ext span {
+	display: block;
+	padding: 1px 0;
+}
+
+/* Content */
+
+#content {
+	position: relative;
+	z-index: 1;
+	clear: both;
+	min-height: 100px;
+	overflow: visible;
+}
+
+* html #content { height: 1%; }
+
+/* Callouts */
+
+#callouts {
+	position: relative;
+	margin-top: -2px;
+	left: -1px;
+	height: 108px;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/callouts.png) no-repeat;
+	clear: both;
+	width: 996px;
+}
+
+* html #callouts { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/callouts.gif); }
+
+.callout {
+	position: absolute;
+	top: 3px;
+	left: 1px;
+	width: 328px;
+	height: 102px;
+}
+
+#callout2 {
+	left: 334px;
+}
+
+#callout3 {
+	left: 667px;
+}
+
+.callout a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 328px;
+	height: 102px;
+	color: #000;
+	font-size: 10px;
+}
+
+.callout a * { cursor: pointer; }
+
+.callout .text {
+	position: absolute;
+	top: 10px;
+	left: 11px;
+	width: 150px;
+	line-height: 11px;
+	height: 84px;
+	overflow: hidden;
+}
+
+.callout .text strong {
+	display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	line-height: 12px;
+}
+
+.callout img {
+	position: absolute;
+	top: 12px;
+	right: 11px;
+}
+
+.callout .calltoaction {
+	position: absolute;
+	bottom: 10px;
+	left: 11px;
+	font-weight: bold;
+}
+
+/* Flyouts */
+
+#flyout {
+	position: absolute;
+	top: 78px;
+	width: 232px;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/explore_bottom.png) no-repeat bottom left;
+	padding: 0 0 37px 0;
+	z-index: 2000;
+}
+
+* html #flyout { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/explore_bottom.gif); }
+
+#flyout .inner {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/explore_top.png) no-repeat;
+	padding: 1px 14px 0 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+* html #flyout .inner {
+	height: 1%; 
+    background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/explore_top.gif);
+}
+
+/* Model flyout */
+
+#flyout.model {
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/model_bottom.png);
+	width: 275px;
+}
+
+* html #flyout.model { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/model_bottom.gif); }
+#flyout.model .inner { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/model_top.png); }
+* html #flyout.model .inner { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/model_top.gif); }
+
+/* One column */
+
+#flyout.section {
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/explore_bottom.png);
+	width: 232px;
+}
+
+* html #flyouts .section { width: 232px; background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/explore_bottom.gif); }
+#flyout.section .inner { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/explore_top.png); }
+* html #flyouts .section .inner { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/explore_top.gif); }
+
+
+/* two columns */
+
+#flyout.section-2 {	
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/sales_2cols_bottom.png);
+	width: 441px; 
+}
+
+* html #flyouts .section-2 { width: 441px;  background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/sales_2cols_bottom.gif); }
+#flyout.section-2 .inner { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/sales_2cols_top.png); }
+* html #flyouts .section-2 .inner { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/sales_2cols_top.gif); }
+
+/* three columns */
+
+#flyout.section-3 {	
+	background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/sales_3cols_bottom.png);
+	width: 650px; 
+}
+
+* html #flyouts .section-3 { width: 650px;  background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/sales_3cols_bottom.gif); }
+#flyout.section-3 .inner { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/sales_3cols_top.png); }
+* html #flyouts .section-3 .inner { background-image: url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/sales_3cols_top.gif); }
+
+
+/* column */
+
+#flyout .col {
+	width: 202px;
+	float: left;
+	margin-right: 7px;
+}
+
+#flyout div.last {
+	margin-right: 0 !important;
+}
+
+#flyout ul {
+	padding: 0;
+	margin: 0;
+}
+
+#flyout ul.model-links {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/flyout_list_bg_model.gif) no-repeat 50% 0;
+	padding-top: 7px;
+}
+
+#flyout li {
+	text-transform: uppercase;
+	color: #6F6F6F;
+	font-weight: bold;
+	font-size: 11px;	
+	padding: 3px 13px 0 13px;
+}
+
+#flyout li.last {
+	padding-bottom: 0;
+}
+
+#flyout.section li,
+#flyout.section-2 li,
+#flyout.section-3 li {
+	padding: 5px 13px;	
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/flyout_list_bg.gif) no-repeat 50% 0;
+}
+
+* html #flyout.section li,
+* html #flyout.section-2 li,
+* html #flyout.section-3 li { height: 1%; }
+
+#flyout li a {
+	color: #666;
+	padding: 0 0 0 6px;
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/Flyouts/flyout_list_arrow.gif) no-repeat 0 4px;
+	display: block;
+}
+
+* html #flyout li a { height: 1%; }
+
+#flyout li a:hover {
+	color: #000;
+}
+
+#flyout h2 {
+	margin: 13px;
+	padding: 0;
+	font-weight: bold;
+	color: #767676;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+/* Model flyout elements */
+
+#flyout h2.model-name {
+	font-size: 31px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+#flyout p {
+	color: #6F6F6F;
+	padding: 0 13px;
+	font-size: 11px;
+}
+
+#flyout p.price {
+	
+}
+
+#flyout p.info {
+	padding: 13px;
+	min-height: 30px;
+	font-size: 12px;
+}
+
+* html #flyout p.info {
+	height: 30px;
+}
+
+#flyout img { display: block; }
+#flyout img.section-thumb { margin-bottom: 5px; }
+
+
+#flyout .close-flyout {
+	position: absolute;
+	top: 12px;
+	right: 17px;
+}
+
+
+/* Overlay */
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index: 1000;
+}
+
+#overlay-container {
+	position: absolute;
+	top: 98px;
+	left: 0;
+	z-index: 1001;
+	padding: 8px;
+	background-color: #ffffff;
+}
+
+#overlay-closebutton {
+	position: absolute;
+	top: -17px;
+	right: 0;
+	width: 12px;
+	height: 13px;
+	background: transparent url(/_layouts/VolvoCars/OwnerPages/Images/Buttons/popup_close.gif) no-repeat;
+}
+
+#flashLightBoxContainer {
+	
+}
+
+/*imran code ends here*/
+
+
+
+/* GIP 3.11 styles */
+
+body.gip311 #top {
+	height: 88px;
+}
+body.gip311 #model-nav {
+	top: 54px;
+}
+body.gip311 #volvocars-ironmark {
+	width: 62px;
+	height: 60px;	
+}
+
+/* Also exists in FlashHiddenTopNav.css */
+
+body.gip311 #logo {
+	background: url("/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Logo/new_ironmark-plain-bg.png") no-repeat scroll left bottom transparent;
+	position: absolute;
+	top: 14px;
+	left: 14px;
+}
+* html body.gip311 #logo {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Logo/new_ironmark-plain-bg.png', sizingMethod='scale');
+}
+
+/* GIP 3.11 styles - Global Top Nav */
+
+body.gip311 #model-nav-inner1 {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_left_grey.png) no-repeat bottom left;
+}
+* html body.gip311 #model-nav-inner1 { background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_left_grey.gif) no-repeat bottom left; }
+
+body.gip311 #model-nav-inner2 {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_right_grey.png) no-repeat bottom right;
+}
+* html body.gip311 #model-nav-inner2 { background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_right_grey.gif) no-repeat bottom right; }
+
+body.gip311 #model-nav-inner2 > ul {
+	margin-top: 15px;
+}
+body.gip311 #model-nav-inner2 ul ul {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_box.png) no-repeat top right;
+	display: inline-block;
+	float: left;
+	height: 33px;
+	padding-right: 4px;
+}
+* html body.gip311 #model-nav-inner2 ul ul {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_box.gif) no-repeat top right;
+	margin-top: 7px;
+}
+body.gip311 #model-nav-inner2 li.first {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_box.png) no-repeat left -35px;
+	height: 33px;
+}
+* html body.gip311 #model-nav-inner2 li.first {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_box.gif) no-repeat left -35px;
+}
+body.gip311 #model-nav-inner2 li {
+	margin-right: 0;
+}
+body.gip311 #model-nav-inner2 li.h-separator {
+	color: #ccc;	
+	margin: 2px -2px 0 -1px;
+	padding-top: 7px;
+	z-index: 1;
+}
+body.gip311 #model-nav ul ul li {
+	z-index: 2;
+}
+body.gip311 #model-nav ul ul li a {
+	padding: 0;
+	height: 33px;
+}
+body.gip311 #model-nav ul ul span {
+	padding: 5px 9px 3px 0;
+	height: 25px;
+	margin-left: 1px;
+}
+body.gip311 #model-nav ul ul li.active a {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_boxhover.png) no-repeat;
+}
+body.gip311 #model-nav li.section a.hover,
+body.gip311 #model-nav ul ul a.hover,
+body.gip311 #model-nav ul ul li.active a.hover {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_boxhover.png) no-repeat;
+	height: 30px;
+	z-index: 2;
+}
+body.gip311 #model-nav ul ul li.active span {
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_boxhover.png) no-repeat right -35px;
+}
+body.gip311 #model-nav li.section a.hover span,
+body.gip311 #model-nav ul ul a.hover span {	
+	background: transparent url(/_layouts/VolvoCars.SharePoint.Features.Site3/images/modelnav_boxhover.png) no-repeat right -35px;
+} 
+body.gip311 #model-nav ul ul li a img {
+	padding: 4px 0 0 8px;
+}
+body.gip311 #model-nav li.section a {
+	padding-left: 2px;
+	margin-left: 12px;
+	height: 38px !important;
+}
+body.gip311 #model-nav li.section a span {
+	padding-right: 6px;
+	padding-left: 4px;
+	margin-right: 7px;
+}
+body.gip311 #model-nav li.explore {
+	margin-left: -18px;
+	margin-right: -4px !important;
+}
+body.gip311 #model-nav li.sales {
+	margin-left: -7px;
+}
+body.gip311 #model-nav li.sales a {
+	margin-left: 8px;
+}
+body.gip311 #model-nav li.sales a span {
+	margin-right: 10px;
+}
+body.gip311 li.h-separator {
+	font-family: Arial, helvetica, Sans-Serif;
+}
+
+* html body.gip311 #model-nav-inner2 ul li { top: 7px; }
+
+* html body.gip311 #model-nav-inner2 li.section { top: 15px; } 
+
+* html body.gip311 #model-nav-inner2 li.section span { height: 35px; } 
+
+* html body.gip311 #model-nav-inner2 li.sales { margin-right: 8px; }
+
+* html body.gip311 #model-nav-inner2 li.sales span { margin-right: 0px; }
+
+* html body.gip311 #model-nav-inner2 ul ul li { 	top: 0px; }
+
+* html body.gip311 #model-nav ul ul a.hover span { height: 23px; } 
+
+/* GIP 3.11 styles - Top-Tools */
+
+body.gip311 #toptools {
+	top: 12px;
+	left: 107px;
+}
+body.gip311 #toptools li {
+	margin: 0 8px 0 0;
+}
+body.gip311 #toptools-ext {
+	top: 12px;
+	right: 14px;
+}
+body.gip311 #toptools-ext li {
+	margin: 0 0 0 9px;
+}
+
+/* GIP 3.11 styles - Search */
+
+body.gip311 #search {
+	top: 42px;	
+	right: 14px;
+}
+body.gip311 #search .global-keywords {
+	background: url("/_layouts/VolvoCars.SharePoint.Features.Site3/images/searchbox-lightblue.png") no-repeat scroll 0 0 transparent;
+	height: 19px;	
+}
+
+body.gip311 #search .searchfield {
+	padding: 3px 0 0 4px;
+}
+
+/* GIP 3.11 styles - Flyouts */
+
+body.gip311 #flyout div.msrp-price, 
+body.gip311 #flyout .model-flyout-header img {
+	float: left;
+	bottom: 0;
+}
+* html body.gip311 #flyout .model-flyout-header img {
+	margin-left: 5px;
+}
+* html body.gip311 div.model-flyout-header {
+	overflow: hidden;
+	width: 100%;
+}
+body.gip311 .model-flyout-header h2 {
+	display: inline;
+	float: left;
+	margin-top: 0px;
+}
+body.gip311 #flyout div.msrp-price {
+	margin: 30px 0 0 6px;
+	margin-bottom: 0px;
+}
+body.gip311 #flyout span.msrp-text {
+	color: #666666;
+	font-size: 11px;
+}
+body.gip311 #flyout span.msrp-amount {
+	color: #666666;
+	font-size: 18px;
+	font-weight: bold;
+}
+body.gip311 #flyout div.model-flyout-header {
+	overflow: hidden;
+	position: relative;
+}
+body.gip311 #flyout .model-flyout-header img {
+	margin: 14px 0 0 14px;
+}
+body.gip311 #content.two-columns {
+	background: #acc1c6 url(/_layouts/VolvoCars.SharePoint.Features.Site3/Images/Backgrounds/basic-page-background.jpg) no-repeat;
+}
+
+
+.hidden{
+	display: block;
+}

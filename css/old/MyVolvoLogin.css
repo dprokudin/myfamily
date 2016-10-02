@@ -1,0 +1,480 @@
+﻿/*==========  Main CSS  ==========*/
+
+/* Main */
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+form a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #212721;
+}
+
+form h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 54px;
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+
+form p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.button {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  -webkit-appearance: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  line-height: 1;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  display: block;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  background-color: transparent;
+  color: #212721;
+  border: solid 1px;
+  border-color: rgba(33, 39, 33, 0.8);
+  padding: 13px 30px 11px 30px;
+  line-height: 1.5;
+  margin: 0.4375em;
+  outline: none;
+  text-align: center;
+}
+
+.white .button.light {
+    color: #fff;
+    border-color: #fff;
+ }
+
+.button.light:hover {
+  color: #fff;
+  background-color: rgba(33, 39, 33, 0.3);
+  border-color: rgba(33, 39, 33, 1.0);
+  -webkit-transtion: all 0.3s;
+  animation: all 0.3s;
+}
+
+.white .button.light:hover{
+    color: #212721;
+    background-color: rgba(255,255,255,0.8);
+    border-color: #fff;
+    -webkit-transtion: all 0.3s;
+    animation: all 0.3s;
+}
+
+.button.strong:hover {
+  color: #fff;
+  background-color: rgba(33, 39, 33, 0.8);
+  border-color: rgba(33, 39, 33, 1.0);
+  -webkit-animation: btnAnimationStrong 0.3s linear forwards;
+  animation: btnAnimationStrong 0.3s linear forwards;
+}
+
+.cta-link {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 22px;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  border-color: rgba(33, 39, 33, 0.6);
+  color: #212721;
+  display: block;
+}
+
+.white .cta-link 
+{
+    color: #fff;
+    border-color: #fff;
+}
+
+.cta-link:hover {
+  border-color: rgba(33, 39, 33, 1.0);
+  border-bottom: 2px solid;
+}
+
+.white .cta-link:hover {
+  border-color: #fff;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/* Top Content */
+.top-content { 
+  height: 514px;
+  text-align: center;
+  color: #212721;
+}
+
+.top-content.white {
+    color: #fff;
+}
+
+.top-content .text {
+  padding-top: 53px;
+}
+
+.top-content h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 6.3em;
+  line-height: 0.97em;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+
+.top-content p {
+  padding-top: 12px;
+}
+
+.top-content .under-text {
+  padding-top: 4px;
+  font-size: 10px;
+  margin: 0;
+}
+
+.top-content .buttons {
+  padding-top: 12px;
+}
+
+.top-content .buttons li {
+  display: inline-block;
+  margin: 0 21px 0;
+}
+
+.top-content .buttons a.cta-link {
+  top: 2px;
+  position: relative;
+}
+
+
+/* Intro Content */
+.intro-content {
+  margin: 0px auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.intro-content h2 {
+  padding-bottom: 12px;
+}
+
+
+/* About List */
+.about-list {
+  margin-bottom: 40px;
+}
+
+.about-list ul.item-list {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-list ul.item-list:last-child {
+  margin: 0;
+}
+
+.about-list ul.item-list li {
+  display: inline-table;
+  width: 33%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.about-list ul.item-list img {
+  width: 83px;
+  min-height: 80px;
+  padding-bottom: 4px;
+}
+
+.about-list ul.item-list img[src=""] {
+   display: none;
+}
+
+.about-list ul.item-list h3,
+.about-list ul.item-list p {
+  padding: 0 40px;
+}
+
+.about-list .item-list h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 7px;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 1.2em;
+}
+
+.about-list .item-list p {
+  font-size: 16px;
+}
+
+
+/* Video */
+.video {
+  width: 100%;
+  height: 510px;
+}
+
+.video-js {
+  overflow: hidden;
+}
+
+.video .video-js .vjs-poster {
+  background-size: cover;
+}
+
+.video .video-js .vjs-big-play-button {
+  background-image: url(/_layouts/VolvoCars/OwnerPages/Images/Buttons/playIcon.png); /* Move to layouts */
+  background-size: 88px 88px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  width: 88px;
+  height: 88px;
+  left: 50%;
+  top: 50%;
+  margin-left: -44px;
+  margin-top: -44px;
+}
+
+.vjs-default-skin .vjs-big-play-button:before,
+.vjs-play-control,
+.vjs-control.vjs-paused, 
+.vjs-current-time, 
+.vjs-time-divider, 
+.vjs-duration.vjs-time-controls.vjs-control, 
+.vjs-remaining-time, 
+.vjs-live-controls, 
+.vjs-fullscreen-control, 
+.vjs-volume-control,
+.vjs-mute-control, 
+.vjs-menu-button, 
+.vjs-default-skin .vjs-slider-handle:before, 
+.vjs-loading-spinner, 
+.vjs-paused .vjs-loading-spinner {
+  display: none;
+}
+
+.vjs-default-skin .vjs-play-progress {
+  background: #5C92B7;
+}
+
+.vjs-default-skin .vjs-control-bar {
+  height: 0;
+}
+
+.vjs-progress-control {
+  height: 2.5em;
+  top: -2.5em;
+}
+
+.video-js.vjs-paused .vjs-big-play-button {
+  display: block;
+}
+
+.video-js .vjs-tech {
+  position: relative;
+  top: -25px;
+  left: 0;
+  width: 994px;
+  height: 563px;
+}
+
+
+/* Sign In */
+.sign-in {
+  margin: 0px auto;
+  width: 55%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+
+.sign-in .text h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 7px;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 1.2em;
+  padding-bottom: 12px;
+}
+
+.sign-in .text p.small {
+  font-size: 16px;
+  margin-top: 22px; 
+}
+
+.sign-in .text a {
+  display: inline-block; 
+  height: 22px;
+  border-bottom: solid 1px;
+  border-color: rgba(33, 39, 33, 0.8);
+}
+
+.sign-in .text a:hover {
+  border-color: rgba(33, 39, 33, 1.0);
+  border-bottom: solid 2px;
+}
+
+.sign-in .buttons {
+  padding-top: 37px;
+}
+
+.sign-in .buttons li {
+  display: inline-block;
+  margin: 0 21px 0;
+}
+
+.sign-in .buttons a.cta-link {
+  top: 2px;
+  position: relative;
+}
+
+
+/*==========  Animations  ==========*/
+
+@keyframes btnAnimationLight {
+    from {
+      color: #212721;
+      background-color: transparent;
+      border-color: rgba(33, 39, 33, 0.8);
+    }
+    to {
+      color: #fff;
+      background-color: rgba(33, 39, 33, 0.3);
+      border-color: rgba(33, 39, 33, 1.0);
+    }
+}
+
+@-webkit-keyframes btnAnimationLight {
+    from {
+      color: #212721;
+      background-color: transparent;
+      border-color: rgba(33, 39, 33, 0.8);
+    }
+    to {
+      color: #fff;
+      background-color: rgba(33, 39, 33, 0.3);
+      border-color: rgba(33, 39, 33, 1.0);
+    }
+}
+
+@keyframes btnAnimationStrong {
+    from {
+      color: #212721;
+      background-color: transparent;
+      border-color: rgba(33, 39, 33, 0.8);
+    }
+    to {
+      background-color: rgba(33, 39, 33, 0.8);
+      border-color: rgba(33, 39, 33, 1.0);
+    }
+}
+
+@-webkit-keyframes btnAnimationStrong {
+    from {
+      color: #212721;
+      background-color: transparent;
+      border-color: rgba(33, 39, 33, 0.8);
+    }
+    to {
+      background-color: rgba(33, 39, 33, 0.8);
+      border-color: rgba(33, 39, 33, 1.0);
+    }
+}
+
+@media (max-width: 568px) {
+  #page,
+  .about-list .item-list li,
+  .video-js {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .intro-content,
+  .sign-in {
+    width: 90%;
+  }
+
+  h1,
+  .top-content h1 {
+    font-size: 50px;
+  }
+
+  h2,
+  .intro-content h2 {
+    font-size: 18px;
+  }
+
+  h3,
+  .about-list .item-list h3, 
+  .sign-in .text h3 {
+    font-size: 16px;
+  }
+
+  p, 
+  .about-list .item-list p, 
+  .sign-in .text p.small {
+    font-size: 12px;
+  }
+
+  #top-nav .nav-list {
+    display: none;
+  }
+
+  #footer ul {
+    text-align: center;
+  }
+
+  #footer ul li {
+    margin-right: 15px;
+  }
+  
+
+}
+
+/*==========  Overiding old login  ==========*/
+
+a.link.rightLink, 
+a.link.leftLink {
+  background: none;
+} 
+
+
+/*==========  IE Fixes  ==========*/
+
+.ie8 .button.strong:hover, 
+.ie8 .button.light:hover {
+  color: #212721;
+}
+
+/*========== footer and header font-size fix  ==========*/
+
+#footer ul li a, #top-nav .nav-list-item {
+    letter-spacing: 0 !important;
+}

@@ -1,0 +1,96 @@
+.video-js {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.vjs-control-bar {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.vjs-default-skin .vjs-big-play-button {
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+  background: url('/_layouts/VolvoCars/OwnerPages/Images/buttons/play-btn-small.png') no-repeat left 8px;
+  background-repeat: no-repeat;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
+}
+
+.vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
+  margin-left: -20px;
+  margin-top: -29px;
+}
+
+.vjs-default-skin:hover .vjs-big-play-button,
+.vjs-default-skin .vjs-big-play-button:focus {
+  background: url('/_layouts/VolvoCars/OwnerPages/Images/buttons/play-btn-small.png') no-repeat left -67px;
+  background-repeat: no-repeat;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
+}
+
+.vjs-default-skin .vjs-big-play-button:before {
+    content: none;
+}
+
+.vjs-default-skin.vjs-has-started.vjs-youtube .vjs-big-play-button {
+    display: none !important;
+}
+
+.vjs-default-skin .vjs-volume-level, 
+.vjs-default-skin .vjs-play-progress {
+    background: #fff;
+    opacity: 0.7;
+}
+
+.vjs-default-skin .vjs-slider-handle:before {
+    content: none;
+} 
+
+.vjs-default-skin .vjs-control:focus:before,
+.vjs-default-skin .vjs-control:hover:before,
+.vjs-default-skin .vjs-control:before {
+  text-shadow: none;
+  font-size: 15px;
+}
+
+.vjs-error .vjs-error-display {
+    margin: 0;
+}
+
+.vjs-error-display div {
+    font-size: 12px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    width: 100%;
+}
+
+.vjs-error-display:before {
+    display: none;
+}
+
+.vjs-fullscreen .vjs-text-track  {
+    line-height: normal; /* Fix for subtitles overlap in full screen mode */
+}
+

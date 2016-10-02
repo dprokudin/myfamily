@@ -1,0 +1,105 @@
+﻿/*EU cookie popup */
+
+#privacy-popup-container {
+	position:fixed; 
+	_position:absolute;
+	right:15px;
+	bottom:10px;
+	z-index:1000;
+}
+#privacy-popup {
+	height:235px;
+	margin:0;
+	overflow:hidden;
+	padding:25px 25px 0 50px;
+	text-align:left;
+	background:url("/_layouts/VolvoCars/OwnerPages/Images/Boxes/privacy-popup.png") left top no-repeat transparent;
+	float:left;
+	font-family: Helvetica Neue, Helvetica, Arial, Sans-Serif;
+}
+#privacy-popup-end {
+	height:260px;
+	margin:0;
+	overflow:hidden;
+	text-align:left;
+	background:url("/_layouts/VolvoCars/OwnerPages/Images/Boxes/privacy-popup-end.png") right top no-repeat transparent;
+	float:left;
+	width:20px;
+	display:inline;
+}
+#privacy-popup h2 {
+	font-size:16px;
+	line-height:20px;
+	margin:0 0 10px;
+	padding:0px 82px 0 0;
+}
+#privacy-popup p {
+	margin:0 0 20px;
+	padding:0;
+	font-size:13px;
+}
+#privacy-popup a.link {
+	margin:0;
+	padding:0;
+	float:left;
+}
+#privacy-popup div.ie { 
+	overflow:hidden;
+    width: 50%; 
+}
+
+* html #privacy-popup div.ie { height:1%; display:inline; }
+
+#privacy-popup a.link span {
+	color:#000;
+	font-size:13px;
+}
+#privacy-popup a.yes span.text {
+	background-color:#d9d9d9;
+	padding:7px 10px;
+	display:inline-block;
+}
+* html #privacy-popup a.yes span.text {
+	padding-right:26px;
+} 
+#privacy-popup a.link span.arrow {
+	display:inline-block;
+	width:10px;
+	margin-left:10px;
+}
+
+#privacy-popup a.yes span.arrow, #privacy-popup a.no span.arrow{
+	background:url("/_layouts/VolvoCars/OwnerPages/Images/Arrows/blue-arrow-small.png") no-repeat scroll right 50% transparent;
+}
+* html  #privacy-popup a.yes span.arrow {
+	_position:absolute;
+	margin-top:3px;
+	behavior: url("iepngfix.htc")
+}
+#privacy-popup a.no {
+	margin-top:10px;
+}
+
+/*remove when new facelife comes 2013 */
+#privacy-popup a.link {
+    background: none;
+}
+
+* html  #privacy-popup-end, * html #privacy-popup, * html  #privacy-popup a.link span.arrow {
+	behavior: url("iepngfix.htc")
+}
+
+a.vcc-disabled { color:#999; }
+
+#privacy-popup a.button-arrow-blue{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 32px 0 12px;
+    margin: 12px 0;
+    background: url(/_layouts/VolvoCars/OwnerPages/Images/Arrows/button-arrow.png) no-repeat #5d90c3;
+    background-position: right center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+}
